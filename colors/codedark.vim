@@ -614,6 +614,6 @@ call <sid>hi('CmpItemKindMethod ', s:cdPink, {}, 'none', {})
 call <sid>hi('CmpItemKindKeyword', s:cdFront, {}, 'none', {})
 call <sid>hi('CmpItemKindProperty', s:cdFront, {}, 'none', {})
 call <sid>hi('CmpItemKindUnit', s:cdFront, {}, 'none', {})
-syn match cNormTypedef "t_[a-zA-Z_][a-zA-Z0-9_]*\>" containedin=ALL
-highlight def link cNormTypedef CTagsStructure
+autocmd Synthax * syn match cNormTypedef "t_[a-zA-Z_][a-zA-Z0-9_]*\>" containedin=ALL
+autocmd highlight def link cNormTypedef CTagsStructure
 
